@@ -1,5 +1,23 @@
+import Link from "next/link";
+
 export function Header() {
   return (
-    <h1>Header</h1>
+    <ul>
+      <li>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/articles">
+          <a>Articles</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/books">
+          <a>Books</a>
+        </Link>
+      </li>
+    </ul>
   )
 }
