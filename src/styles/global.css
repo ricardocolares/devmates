@@ -16,9 +16,28 @@
   }
 }
 
-/* body, input, textarea, select, button {
+.container {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 42rem;
+  padding: 2.625rem 1.3125rem;
+  min-height: 100%;
+}
+
+.nav__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+body, input, textarea, select, button {
   font: 400 1rem "Merriweather", sans-serif;
-} */
+}
+
+ul {
+  list-style-type: none;
+}
 
 button {
   cursor: pointer;

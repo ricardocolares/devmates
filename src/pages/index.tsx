@@ -1,8 +1,6 @@
-import type { NextPage } from 'next'
-
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <h1>Home</h1>
     </div>
   )
