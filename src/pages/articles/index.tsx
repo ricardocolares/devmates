@@ -1,7 +1,7 @@
 export default function Articles() {
   return (
     <div>
-      <h1>material-ui</h1>
+      <h1>materialui</h1>
       <p>Articles texto </p>
     </div>
   )
