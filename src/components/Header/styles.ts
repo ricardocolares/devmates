@@ -4,7 +4,6 @@ export const Container = styled.div`
     height: 5rem;
     align-items: center;
 `
-
 export const Content = styled.div`
   li {
         justify-content: space-between;
@@ -25,10 +24,6 @@ export const Content = styled.div`
         transition: color 0.2s;
        
         border-bottom: 1px solid var(--yellow-500);
-        
-     
-          
-
     
     &:hover {
         position: relative;
@@ -42,6 +37,7 @@ export const Content = styled.div`
         color: var(--white);
         font-weight: bold;
      }
+
      &.active::after {
        content: '';
         height: 3px;
@@ -55,12 +51,5 @@ export const Content = styled.div`
 
 
 }
-
-
-   
-    
-    
-   
-
     
 `
