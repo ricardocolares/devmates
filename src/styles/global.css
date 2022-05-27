@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box
 }
+:root {
+  --white: #FFFFFF;
+
+  --gray-300: #a8a8b3;
+  --gray-800: #29292e;
+  --gray-900: #121214;
+
+  --yellow-500: #f7df1e;
+}
+
 
 @media (max-width: 1080px) {
   html {
@@ -24,11 +34,15 @@
   max-width: 42rem;
   padding: 2.625rem 1.3125rem;
   min-height: 100%;
+  vertical-align: top;
+  margin: 0 auto;
 }
+
 
 .nav__header {
   display: flex;
   justify-content: space-between;
+  height: 5px;
 }
 
 body, input, textarea, select, button {
