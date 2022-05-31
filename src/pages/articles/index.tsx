@@ -1,8 +1,14 @@
+import { Container, Content } from "../styles";
+
 export default function Articles() {
   return (
-    <div>
+
+    <Container>
       <h1>Articles</h1>
-      <p>Articles texto </p>
-    </div>
+
+      <Content>
+        <p>Texto</p>
+      </Content>
+    </Container>
   )
 }

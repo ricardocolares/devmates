@@ -1,8 +1,13 @@
+import { Container, Content } from "../styles";
+
 export default function Books() {
   return (
-    <div>
+
+    <Container>
       <h1>Books</h1>
-      <p>Books texto </p>
-    </div>
+      <Content>
+      <p>Texto</p>
+      </Content>
+    </Container>
   )
 }
