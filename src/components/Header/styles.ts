@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    height: 5rem;
+    /* height: 10rem; */
     align-items: center;
 `
 export const Content = styled.div`

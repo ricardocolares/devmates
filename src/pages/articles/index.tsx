@@ -1,4 +1,4 @@
-import { Container, Content } from "../styles";
+import { Container, Content } from "./styles";
 
 export default function Articles() {
   return (
