@@ -13,20 +13,31 @@ export const Container = styled.div`
     justify-content: space-between;
 
     h2 {
-        position: absolute;
+        /* position: absolute; */
         display: block;
-        margin-left:32rem;
-        font-size: 32px;
-        margin-bottom: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        padding-left:30rem;
+        font-size: 1.75rem;
+        margin-bottom: 3rem;
         padding-bottom:.3rem;
-        border-bottom: 1px solid var(--yellow-500);
-  
+        box-sizing: inherit;
+        position: relative;
+    
+    :after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        bottom: -4px; 
+        margin: 0 auto;
+		  left: 0;
+        right: 3.5rem;
+		  width: 6%;
+		  background: var(--yellow-500);
+    }
+    
     }
 
-    .Card {
-        /* position: relative; */
-        margin-left: 30rem;
-    }
 
   
 `
@@ -58,7 +69,14 @@ export const Content = styled.div`
     }
 
     span {
-        border-radius: 50%;
+        border-radius: 60%;
+        background-color: var(--white);
+
+        .icons{
+            height: 30px;
+            width: 30px;
+            margin-left: 8px;
+        }
     }
 
     p {

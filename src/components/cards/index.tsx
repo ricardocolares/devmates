@@ -1,13 +1,20 @@
 import * as React from 'react';
 import { Box, Card, CardContent, Typography, CardActionArea, CardActions, Button } from '@mui/material/'
+import styled from 'styled-components';
 
 
+const CustomBox = styled(Box)`
+    width: 650px;
+    margin-left: 15rem;
+    margin-top: 1.5rem;
+
+`
 
 export default function BasicCard() {
     return (
-        <Box width='650px' mb={-3} mt={10} ml={30} p={1.5} component={Card}>
+        <CustomBox component={Card}>
             <Card variant="outlined">
-                <CardActionArea href="localhost:3000/articles">
+                <CardActionArea href="/articles">
                     <CardContent>
                         <Typography gutterBottom variant='h4' component='div'>
                             Title of Article
@@ -21,6 +28,6 @@ export default function BasicCard() {
                     </CardContent>
                 </CardActionArea>
             </Card>
-        </Box >
+        </CustomBox>
     );
 }

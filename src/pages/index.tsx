@@ -1,11 +1,14 @@
-import styled from "styled-components";
+import { ReactElement } from 'react'
 import { Container, Content } from "./styles";
-import gojouImg from "../../public/gojou.jpg";
+import gojouImg from "../../public/goju.jpg";
 import Image from "next/image";
 import BasicCard from "../components/cards"
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import { Card } from "@mui/material";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+
+
 
 export default function Home() {
   return (
@@ -14,9 +17,9 @@ export default function Home() {
         <h1>Hey, I'm Gojo Satori</h1>;
 
         <span>
-          <Image src={gojouImg} alt="The GOAT" width="50" height="50" />
-          <FontAwesomeIcon icon={"linkedin"} />
-          <FontAwesomeIcon icon={"twitter"} />
+          <Image src={gojouImg} alt="The GOAT" width="60" height="60" />
+          <FontAwesomeIcon className="icons" icon={faLinkedin} />
+          <FontAwesomeIcon className="icons" icon={faTwitter} />
         </span>
 
         <p>ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores rem assumenda voluptatum veritatis repudiandae officia ad eos exercitationem iure minus perspiciatis ullam autem dolorum iste, tempore laboriosam aliquam et libero.</p>
@@ -25,7 +28,6 @@ export default function Home() {
       </Content>
 
       <h2>Articles</h2>
-      <p></p>
 
       <BasicCard />
       <BasicCard />
