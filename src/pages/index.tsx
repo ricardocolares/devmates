@@ -1,13 +1,11 @@
-import { ReactElement } from 'react'
+import { ReactElement } from "react";
 import { Container, Content } from "./styles";
 import gojouImg from "../../public/goju.jpg";
 import Image from "next/image";
-import BasicCard from "../components/cards"
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-
-
+import BasicCard from "../components/cards";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
@@ -21,9 +19,18 @@ export default function Home() {
           <FontAwesomeIcon className="icons" icon={faTwitter} />
         </span>
 
-        <p>ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores rem assumenda voluptatum veritatis repudiandae officia ad eos exercitationem iure minus perspiciatis ullam autem dolorum iste, tempore laboriosam aliquam et libero.</p>
-        <p>Working for early stage startups and corporations like the Financial Times taught me a lot about building software. I share what I've learned about software design & architecture through my articles, books and newsletter.</p>
-
+        <p>
+          ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Asperiores rem assumenda voluptatum veritatis repudiandae officia ad
+          eos exercitationem iure minus perspiciatis ullam autem dolorum iste,
+          tempore laboriosam aliquam et libero.
+        </p>
+        <p>
+          Working for early stage startups and corporations like the Financial
+          Times taught me a lot about building software. I share what I've
+          learned about software design & architecture through my articles,
+          books and newsletter.
+        </p>
       </Content>
 
       <h2>Articles</h2>
@@ -32,6 +39,5 @@ export default function Home() {
       <BasicCard />
       <BasicCard />
     </Container>
-
   );
 }
