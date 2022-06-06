@@ -2,12 +2,10 @@ import * as React from 'react';
 import { Box, Card, CardContent, Typography, CardActionArea, CardActions, Button } from '@mui/material/'
 import styled from 'styled-components';
 
-
 const CustomBox = styled(Box)`
     width: 650px;
     margin-left: 15rem;
     margin-top: 1.5rem;
-
 `
 
 export default function BasicCard() {

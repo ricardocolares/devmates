@@ -4,7 +4,6 @@ import gojouImg from "../../public/goju.jpg";
 import Image from "next/image";
 import BasicCard from "../components/cards"
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { Card } from "@mui/material";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
@@ -14,7 +13,7 @@ export default function Home() {
   return (
     <Container>
       <Content>
-        <h1>Hey, I'm Gojo Satori</h1>;
+        <h1>Hey, I'm Gojo Satori</h1>
 
         <span>
           <Image src={gojouImg} alt="The GOAT" width="60" height="60" />
