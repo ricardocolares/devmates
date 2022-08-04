@@ -1,4 +1,3 @@
-import { ReactElement } from "react";
 import { Container, Content } from "./styles";
 import gojouImg from "../../public/goju.jpg";
 import Image from "next/image";
@@ -6,8 +5,20 @@ import BasicCard from "../components/cards";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import api from "../service/api";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await api.get("/posts");
+
+      return response.data;
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <Container>
       <Content>
